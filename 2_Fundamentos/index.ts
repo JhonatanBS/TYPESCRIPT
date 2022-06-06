@@ -1,7 +1,7 @@
 /* TIPOS DE DADOS */
 
 // 1 - number
-let a: number = 100;
+let a: number = 500;
 let b: number = 200;
 
 console.log(a + b);
