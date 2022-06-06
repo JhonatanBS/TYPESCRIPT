@@ -23,3 +23,9 @@ const ann: string= "annotation";
 // inference: O Typescrypt detecta o tipo de dado e atribuí
 let inf = "inference";
 let num = 50;
+
+/* TAREFA 02*/
+let n: number = 100;
+let s = n.toString();
+console.log(typeof n, typeof s);
+console.log(`O número ${n} que é um ${typeof n}, foi convertido para uma ${typeof s}: '${s}'`);
