@@ -9,3 +9,10 @@ const names: string[] = [ "João", "Paulo", "Matheus"];
 
 // Não é possível inserir um dado do tipo numérico em um array de string
 //names.push(5);
+
+/* Tipagem alternativa para array*/
+
+const num: Array<number> = [2,4,6,8,10];
+
+// Não é possível inserir um dado do tipo string em um array numérico
+//num.push("string");
