@@ -22,3 +22,12 @@ const num: Array<number> = [2,4,6,8,10];
 const list: any[] = [{}, " ", [],520];// Aceita diversos tipos de dados
 
 list.push([7,9, "Paulo"]);
+
+/* Funções e a tipagem nos parâmetros */
+
+function subtracao(a: number,b: number){// Os parâmetros só podem receber números
+    console.log(a - b);
+}
+
+subtracao(15, 4);
+//subtracao("ola", "World");
