@@ -7,3 +7,8 @@ var names = ["João", "Paulo", "Matheus"];
 //names.push(5);
 /* Tipagem alternativa para array*/
 var num = [2, 4, 6, 8, 10];
+// Não é possível inserir um dado do tipo string em um array numérico
+//num.push("string");
+/* Quebrando tipagem com any */
+var list = [{}, " ", [], 520];
+list.push([7, 9, "Paulo"]);
