@@ -31,3 +31,16 @@ function subtracao(a: number,b: number){// Os parâmetros só podem receber núm
 
 subtracao(15, 4);
 //subtracao("ola", "World");
+
+/* Retorno de uma função com tipo de dado*/
+
+function pessoa(name: string, age: number):string{// É permitod apenas retorno de string
+     return `Meu nome é ${name} e tenho ${age} anos.`;
+}
+
+// Não é possível retornar uma string em função com retorno de números
+// function pessoa2(name: string, age: number):number{
+//     return `Meu nome é ${name} e tenho ${age} anos.`;
+// }
+
+console.log(pessoa("Lucas", 20));
