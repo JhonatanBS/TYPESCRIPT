@@ -44,3 +44,11 @@ function pessoa(name: string, age: number):string{// É permitod apenas retorno 
 // }
 
 console.log(pessoa("Lucas", 20));
+
+/* Tipos de Objetos*/
+
+function rectangle(area: {h:number,b:number}):string{
+    return `A área do retângulo da base ${area.b} e a altura ${area.h} é ${area.b * area.h}`;
+}
+
+console.log(rectangle({h:50,b:20}));

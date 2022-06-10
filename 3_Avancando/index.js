@@ -27,3 +27,8 @@ function pessoa(name, age) {
 //     return `Meu nome é ${name} e tenho ${age} anos.`;
 // }
 console.log(pessoa("Lucas", 20));
+/* Tipos de Objetos*/
+function rectangle(area) {
+    return "A \u00E1rea do ret\u00E2ngulo da base ".concat(area.b, " e a altura ").concat(area.h, " \u00E9 ").concat(area.b * area.h);
+}
+console.log(rectangle({ h: 50, b: 20 }));
