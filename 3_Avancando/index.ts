@@ -102,3 +102,14 @@ const showProducts = (name:string | boolean)=>{
 
 showProducts("Televisão");
 showProducts(false);
+
+/* type alias */
+
+type ID = string | number;
+
+function showId(id: ID){
+    console.log(`O ID é ${id}`);
+}
+
+showId(151);
+showId("30");
