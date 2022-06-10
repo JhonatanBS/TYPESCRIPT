@@ -32,7 +32,7 @@ function rectangle(area) {
     return "A \u00E1rea do ret\u00E2ngulo da base ".concat(area.b, " e a altura ").concat(area.h, " \u00E9 ").concat(area.b * area.h);
 }
 console.log(rectangle({ h: 50, b: 20 }));
-/* Props opcionais */
+/* Props opcionais: Com o sinal de interrogação, declaramos que o parãmentro pode receber ou não um argumento */
 var dog = function (name, age, color) {
     console.log("Nome: ".concat(name));
     console.log("Idade: ".concat(age));
@@ -40,3 +40,13 @@ var dog = function (name, age, color) {
         console.log("Cor: ".concat(color));
 };
 dog("Dudu", 4, "white");
+/* Validando dados opcionais */
+var data = function (name, age, genre) {
+    console.log("Nome: ".concat(name));
+    console.log("Idade: ".concat(age));
+    if (genre !== undefined) {
+        console.log("G\u00EAnero: ".concat(genre));
+    }
+};
+data("Joel", 20, "Masculino");
+data("Joana", 25);

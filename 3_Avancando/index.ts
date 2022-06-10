@@ -63,3 +63,17 @@ const dog = (name:string, age: number, color?: string)=>{
 }
 
 dog("Dudu",4,"white");
+
+/* Validando dados opcionais */
+
+const data = (name:string,age: number, genre?: string)=>{
+    console.log(`Nome: ${name}`);
+    console.log(`Idade: ${age}`);
+
+    if(genre !== undefined){
+        console.log(`Gênero: ${genre}`);
+    }
+}
+
+data("Joel",20,"Masculino");
+data("Joana",25);
