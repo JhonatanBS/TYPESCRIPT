@@ -32,3 +32,11 @@ function rectangle(area) {
     return "A \u00E1rea do ret\u00E2ngulo da base ".concat(area.b, " e a altura ").concat(area.h, " \u00E9 ").concat(area.b * area.h);
 }
 console.log(rectangle({ h: 50, b: 20 }));
+/* Props opcionais */
+var dog = function (name, age, color) {
+    console.log("Nome: ".concat(name));
+    console.log("Idade: ".concat(age));
+    if (color)
+        console.log("Cor: ".concat(color));
+};
+dog("Dudu", 4, "white");

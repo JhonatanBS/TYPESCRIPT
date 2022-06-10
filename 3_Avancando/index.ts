@@ -52,3 +52,14 @@ function rectangle(area: {h:number,b:number}):string{
 }
 
 console.log(rectangle({h:50,b:20}));
+
+/* Props opcionais: Com o sinal de interrogação, declaramos que o parãmentro pode receber ou não um argumento */
+
+const dog = (name:string, age: number, color?: string)=>{
+    console.log(`Nome: ${name}`);
+    console.log(`Idade: ${age}`);
+    if(color)
+       console.log(`Cor: ${color}`);
+}
+
+dog("Dudu",4,"white");
