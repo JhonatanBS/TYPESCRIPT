@@ -77,3 +77,13 @@ const data = (name:string,age: number, genre?: string)=>{
 
 data("Joel",20,"Masculino");
 data("Joana",25);
+
+/* Union type */
+
+function age(data: number | string){
+    console.log(`A minha idade é ${data}`);
+}
+
+age(25);
+age("30");
+//age(true);
