@@ -50,3 +50,20 @@ var data = function (name, age, genre) {
 };
 data("Joel", 20, "Masculino");
 data("Joana", 25);
+/* Union type */
+function age(data) {
+    console.log("A minha idade \u00E9 ".concat(data));
+}
+age(25);
+age("30");
+//age(true);
+/* Union types com typeof*/
+var showProducts = function (name) {
+    if (typeof name === "boolean") {
+        console.log("Produto n\u00E3o encontrado no sistema!");
+        return;
+    }
+    console.log("O produto ".concat(name, " est\u00E1 em estoque"));
+};
+showProducts("Televisão");
+showProducts(false);

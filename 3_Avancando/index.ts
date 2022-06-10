@@ -87,3 +87,18 @@ function age(data: number | string){
 age(25);
 age("30");
 //age(true);
+
+/* Union types com typeof*/
+
+const showProducts = (name:string | boolean)=>{
+
+    if(typeof name === "boolean"){
+        console.log(`Produto não encontrado no sistema!`);
+        return;
+    }
+
+    console.log(`O produto ${name} está em estoque`);
+}
+
+showProducts("Televisão");
+showProducts(false);
