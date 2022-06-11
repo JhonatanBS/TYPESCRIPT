@@ -67,3 +67,17 @@ var showProducts = function (name) {
 };
 showProducts("Televisão");
 showProducts(false);
+function showId(id) {
+    console.log("O ID \u00E9 ".concat(id));
+}
+showId(151);
+showId("30");
+var sum = function (mat) {
+    console.log("A soma de ".concat(mat.a, " + ").concat(mat.b, " + ").concat(mat.c, " = ").concat(mat.a + mat.b + mat.c));
+};
+var valores = {
+    a: 30,
+    b: 50,
+    c: 120
+};
+sum(valores);

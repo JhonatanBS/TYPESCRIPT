@@ -113,3 +113,23 @@ function showId(id: ID){
 
 showId(151);
 showId("30");
+
+/* interfaces */
+
+interface numbers{
+    a: number,
+    b: number,
+    c: number
+}
+
+const sum = (mat: numbers)=>{
+    console.log(`A soma de ${mat.a} + ${mat.b} + ${mat.c} = ${ mat.a + mat.b + mat.c}`);
+}
+
+const valores: numbers = {
+    a: 30,
+    b: 50,
+    c: 120
+}
+
+sum(valores);
