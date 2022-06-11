@@ -133,3 +133,29 @@ const valores: numbers = {
 }
 
 sum(valores);
+
+/* types alias X interfaces */
+
+interface Person{
+    name: string
+}
+
+interface Person{
+    age: number
+}
+
+function dataPerson(data: Person){
+    console.log(`Meu nome ${data.name} e tenho ${data.age}`);
+}
+
+const showPerson = {name:'Matheus',age: 25}
+
+dataPerson(showPerson);
+
+type products = {
+    name: string
+}
+
+// type products = {
+//     price: string
+// }

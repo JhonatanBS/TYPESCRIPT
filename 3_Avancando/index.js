@@ -81,3 +81,11 @@ var valores = {
     c: 120
 };
 sum(valores);
+function dataPerson(data) {
+    console.log("Meu nome ".concat(data.name, " e tenho ").concat(data.age));
+}
+var showPerson = { name: 'Matheus', age: 25 };
+dataPerson(showPerson);
+// type products = {
+//     price: string
+// }
