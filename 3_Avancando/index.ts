@@ -159,3 +159,13 @@ type products = {
 // type products = {
 //     price: string
 // }
+
+/* Literal types */
+
+const controller = (direction: "left" | "right" | "top" | "buttom") => {
+    console.log(`A direção ${direction}`);
+}
+
+controller("top");
+controller("right");
+controller("left");

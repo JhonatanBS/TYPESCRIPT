@@ -89,3 +89,10 @@ dataPerson(showPerson);
 // type products = {
 //     price: string
 // }
+/* Literal types */
+var controller = function (direction) {
+    console.log("A dire\u00E7\u00E3o ".concat(direction));
+};
+controller("top");
+controller("right");
+controller("left");
