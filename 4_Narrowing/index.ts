@@ -37,3 +37,34 @@ operations([1,2,3,4,5,6,7,8,9],"+");
 operations([1,2,3,4,5,6,7,8,9],"-");
 operations([1,2,3,4,5,6,7,8,9],"*");
 operations([1,2,3,4,5,6,7,8,9],"/");
+
+/* instanceof */
+class User {
+    name;
+  
+    constructor(name: string) {
+      this.name = name;
+    }
+  }
+  
+  class SuperUser extends User {
+    constructor(name: string) {
+      super(name);
+    }
+  }
+  
+  const jhon = new User('Jhon');
+  const paul = new SuperUser('Paul');
+  
+  function userGreeting(user: object) {
+    if (user instanceof SuperUser) {
+      console.log(`Olá ${user.name}, deseja ver os dados?`);
+    } else if (user instanceof User) {
+      console.log(`Olá ${user.name}!`);
+    }
+  }
+  
+  userGreeting(jhon);
+  userGreeting(paul);
+
+  
