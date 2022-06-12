@@ -78,3 +78,35 @@ function userGreeting(user) {
 }
 userGreeting(jhon);
 userGreeting(paul);
+/* Operador in */
+var Dog = /** @class */ (function () {
+    function Dog(name, breed) {
+        this.name = name;
+        if (breed) {
+            this.breed = breed;
+        }
+    }
+    return Dog;
+}());
+var turca = new Dog('Turca');
+var bob = new Dog('Bob', 'Pastor Alemão');
+function showDogDetails(dog) {
+    if ('breed' in dog) {
+        console.log("O cachorro \u00E9 da ra\u00E7a: ".concat(dog.breed));
+    }
+    else {
+        console.log('O cachorro é um SRD!');
+    }
+}
+showDogDetails(turca);
+showDogDetails(bob);
+var showReview = function (review) {
+    if (!review.review) {
+        console.log("Ops! Você não deixou sua avaliação!");
+        return;
+    }
+    console.log("Agradecemos a sua avalia\u00E7\u00E3o de ".concat(review.review));
+};
+showReview({ review: 1 });
+showReview({ review: 2 });
+showReview({ review: false });

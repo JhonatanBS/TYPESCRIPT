@@ -93,3 +93,22 @@ class User {
   
   showDogDetails(turca)
   showDogDetails(bob)
+
+  /* Tarefa 3 */
+
+  interface Review{
+    review: number | boolean
+  }
+
+  const showReview = (review: Review) => {
+      if(!review.review){
+        console.log("Ops! Você não deixou sua avaliação!");
+        return;
+      }
+
+      console.log(`Agradecemos a sua avaliação de ${review.review}`);
+  }
+
+  showReview({review:1});
+  showReview({review:2});
+  showReview({review:false});
