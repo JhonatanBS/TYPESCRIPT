@@ -55,3 +55,8 @@ function showId(id) {
 }
 showId([1, 2, 3]);
 showId(500);
+/* never: Não retorna nada */
+function option(msg) {
+    throw new Error(msg);
+}
+// option("Erro no código");

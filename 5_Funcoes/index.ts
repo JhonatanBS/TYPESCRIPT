@@ -75,3 +75,11 @@ function showId(id: unknown){
 
 showId([1,2,3]);
 showId(500);
+
+/* never: Não retorna nada */
+
+function option(msg: string): never{
+    throw new Error(msg);
+}
+
+// option("Erro no código");
