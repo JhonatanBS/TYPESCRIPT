@@ -83,3 +83,11 @@ function option(msg: string): never{
 }
 
 // option("Erro no código");
+
+/* Operator Rest*/
+
+function sumValues(...numbers: number[]){
+    return numbers.reduce((acumalador, valueAtual) => acumalador + valueAtual)
+}
+
+console.log(sumValues(1,2,3,4,5,6,7,8,9));
