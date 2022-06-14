@@ -91,3 +91,13 @@ function sumValues(...numbers: number[]){
 }
 
 console.log(sumValues(1,2,3,4,5,6,7,8,9));
+
+/* Destructuring */
+
+function dog({name,age}: {name:string,age:number}):string{
+    return `Meu cachorro tem ${age} anos e seu nome é ${name}`;
+}
+
+const dataDog = {name: "Rex", age: 25}
+
+console.log(dataDog);

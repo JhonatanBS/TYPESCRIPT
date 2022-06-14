@@ -69,3 +69,10 @@ function sumValues() {
     return numbers.reduce(function (acumalador, valueAtual) { return acumalador + valueAtual; });
 }
 console.log(sumValues(1, 2, 3, 4, 5, 6, 7, 8, 9));
+/* Destructuring */
+function dog(_a) {
+    var name = _a.name, age = _a.age;
+    return "Meu cachorro tem ".concat(age, " anos e seu nome \u00E9 ").concat(name);
+}
+var dataDog = { name: "Rex", age: 25 };
+console.log(dataDog);
