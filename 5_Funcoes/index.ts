@@ -53,3 +53,12 @@ function larger<T extends number | string>(x: T, y: T):T{
 console.log(larger(10,5));
 console.log(larger('50',"20"));
 //console.log(154,"20");
+
+/* Function default */
+
+function data(name, age = 20){
+   console.log(`Meu nome é ${name} e tenho ${age}`);
+}
+
+data("Paulo");
+data("Matheus", 35);

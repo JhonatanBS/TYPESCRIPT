@@ -36,4 +36,11 @@ function larger(x, y) {
 }
 console.log(larger(10, 5));
 console.log(larger('50', "20"));
-console.log(154, "20");
+//console.log(154,"20");
+/* Function default */
+function data(name, age) {
+    if (age === void 0) { age = 20; }
+    console.log("Meu nome \u00E9 ".concat(name, " e tenho ").concat(age));
+}
+data("Paulo");
+data("Matheus", 35);
