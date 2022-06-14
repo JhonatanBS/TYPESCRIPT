@@ -44,3 +44,14 @@ function data(name, age) {
 }
 data("Paulo");
 data("Matheus", 35);
+/* unknown */
+function showId(id) {
+    if (Array.isArray(id)) {
+        console.log(id[0]);
+    }
+    else if (typeof id === "number") {
+        console.log(id);
+    }
+}
+showId([1, 2, 3]);
+showId(500);
