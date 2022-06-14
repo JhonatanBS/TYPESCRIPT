@@ -24,3 +24,32 @@ const fullName = (f: (name:string) => string, firstName:string, lastName?: strin
 
 fullName(firstName, "Paulo", "Silva");
 fullName(firstName, "Matheus");
+
+/* function generic */
+
+function genericFunction<T>(list: T[]): T{
+    return list[0];
+}
+
+console.log(genericFunction([1,2,3,4,5]));
+console.log(genericFunction(["caderno", "livro", "mochila"]));
+
+const list = <T>(value: T): T => {
+   return value;
+}
+
+// Constraints
+console.log(list<number>(525));
+console.log(list<string>("Julio"));
+console.log(list<boolean>(true));
+console.log(list<number[]>([2,4,6,8,10]));
+
+function larger<T extends number | string>(x: T, y: T):T{
+    let maior:T;
+
+    return +x > +y ? maior = x : maior = y;
+}
+
+console.log(larger(10,5));
+console.log(larger('50',"20"));
+//console.log(154,"20");

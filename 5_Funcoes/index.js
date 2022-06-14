@@ -16,3 +16,24 @@ var fullName = function (f, firstName, lastName) {
 };
 fullName(firstName, "Paulo", "Silva");
 fullName(firstName, "Matheus");
+/* function generic */
+function genericFunction(list) {
+    return list[0];
+}
+console.log(genericFunction([1, 2, 3, 4, 5]));
+console.log(genericFunction(["caderno", "livro", "mochila"]));
+var list = function (value) {
+    return value;
+};
+// Constraints
+console.log(list(525));
+console.log(list("Julio"));
+console.log(list(true));
+console.log(list([2, 4, 6, 8, 10]));
+function larger(x, y) {
+    var maior;
+    return +x > +y ? maior = x : maior = y;
+}
+console.log(larger(10, 5));
+console.log(larger('50', "20"));
+console.log(154, "20");
