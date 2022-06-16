@@ -38,3 +38,10 @@ var coordData = {
 coordData.y = 50;
 coordData.z = 7;
 console.log(coordData);
+var dataPerson = {
+    name: "Lucas",
+    age: 25,
+    hobby: "Academia",
+    food: "estrogonofe"
+};
+console.log(dataPerson);

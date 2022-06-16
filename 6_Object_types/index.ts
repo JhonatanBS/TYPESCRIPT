@@ -78,3 +78,24 @@ coordData.y = 50;
 coordData.z = 7;
 
 console.log(coordData);
+
+/* extends */
+
+interface Person{
+    name: string,
+    age: number,
+}
+
+interface Son extends Person{
+    hobby: string,
+    food: string
+}
+
+const dataPerson: Son = {
+    name: "Lucas",
+    age: 25,
+    hobby: "Academia",
+    food: "estrogonofe"
+}
+
+console.log(dataPerson);
