@@ -24,3 +24,27 @@ const dataStudent: Student = {
 
 showStudent(dataStudent);
 showStudent({name:"Paulo", register: "45845995-1", isEnrolled: false});
+
+/* dados opcionais de interface */
+
+interface Employee{
+    office: string,
+    salary: number,
+    extraHour?: boolean
+}
+
+function showEmployee(employee: Employee){
+    console.log(`O cargo do empregado é ${employee.office} e seu salário é ${employee.salary}`);
+    if(employee.extraHour){
+       console.log(`O empregado fez horas extras esse mês!`);
+    }
+}
+
+const dataEmployee: Employee = {
+    office: "Programador",
+    salary: 7560.90,
+    extraHour: true
+}
+
+showEmployee(dataEmployee);
+showEmployee({office:"design", salary: 5600.00});

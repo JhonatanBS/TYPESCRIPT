@@ -14,3 +14,16 @@ var dataStudent = {
 };
 showStudent(dataStudent);
 showStudent({ name: "Paulo", register: "45845995-1", isEnrolled: false });
+function showEmployee(employee) {
+    console.log("O cargo do empregado \u00E9 ".concat(employee.office, " e seu sal\u00E1rio \u00E9 ").concat(employee.salary));
+    if (employee.extraHour) {
+        console.log("O empregado fez horas extras esse m\u00EAs!");
+    }
+}
+var dataEmployee = {
+    office: "Programador",
+    salary: 7560.90,
+    extraHour: true
+};
+showEmployee(dataEmployee);
+showEmployee({ office: "design", salary: 5600.00 });
