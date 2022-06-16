@@ -120,3 +120,10 @@ const dataSonic: Sonic = {
 }
 
 console.log(dataSonic);
+
+/* Tuplas */
+
+type numbers =  [number, number,number];
+
+const numberArray: numbers = [1,2,3];
+ console.log(numberArray);

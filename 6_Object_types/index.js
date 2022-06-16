@@ -51,3 +51,5 @@ var dataSonic = {
     powers: ["jump", "fly", "roll"]
 };
 console.log(dataSonic);
+var numberArray = [1, 2, 3];
+console.log(numberArray);
