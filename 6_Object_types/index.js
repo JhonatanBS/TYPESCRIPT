@@ -27,3 +27,9 @@ var dataEmployee = {
 };
 showEmployee(dataEmployee);
 showEmployee({ office: "design", salary: 5600.00 });
+var showProduct = {
+    name: "Video game",
+    description: "Video game com 1T"
+};
+console.log(showProduct);
+// showProduct.description = "Video game caro";
