@@ -32,4 +32,9 @@ var showProduct = {
     description: "Video game com 1T"
 };
 console.log(showProduct);
-// showProduct.description = "Video game caro";
+var coordData = {
+    x: 48
+};
+coordData.y = 50;
+coordData.z = 7;
+console.log(coordData);

@@ -63,3 +63,18 @@ const showProduct: Product = {
 
 console.log(showProduct);
 // showProduct.description = "Video game caro";
+
+/* index signature: Não existe uma definição para a chave */
+
+interface Coordinate{
+    [index: string] : number
+}
+
+const coordData: Coordinate = {
+    x: 48
+}
+
+coordData.y = 50;
+coordData.z = 7;
+
+console.log(coordData);
