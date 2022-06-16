@@ -99,3 +99,24 @@ const dataPerson: Son = {
 }
 
 console.log(dataPerson);
+
+/* intersection types : Une duas ou mais interfaces */
+
+interface Character{
+    name: string,
+    color: string
+}
+
+interface Skills{
+    powers: string[]
+}
+
+type Sonic = Character & Skills;
+
+const dataSonic: Sonic = {
+    name: "Sonic",
+    color: "blue",
+    powers: ["jump","fly", "roll" ] 
+}
+
+console.log(dataSonic);

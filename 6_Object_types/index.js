@@ -45,3 +45,9 @@ var dataPerson = {
     food: "estrogonofe"
 };
 console.log(dataPerson);
+var dataSonic = {
+    name: "Sonic",
+    color: "blue",
+    powers: ["jump", "fly", "roll"]
+};
+console.log(dataSonic);
