@@ -9,3 +9,5 @@ function sum(a, b) {
     return "A soma dos n\u00FAmeros ".concat(a, " e ").concat(b, " \u00E9 ").concat(a + b);
 }
 console.log(sum(120, 50));
+var dataOne = { name: "Diego", age: 20, height: 1.80, birthday: new Date(1990, 5, 15) };
+console.log(dataOne);
