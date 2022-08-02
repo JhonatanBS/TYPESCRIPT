@@ -24,3 +24,19 @@ class NewUser {
 const Mateus = new NewUser("Mateus", 25);
 
 console.log(Mateus);
+
+// 3 - Readonly: Os campos serão somente para leitura, não é possível sofrear alteração
+
+class Car {
+  readonly brand = "Fiat";
+  model : string;
+
+  constructor(model: string) {
+    this.model = model;
+  }
+}
+
+const Uno = new Car("Uno");
+// Uno.brand = "Audi"; Erro
+
+console.log(Uno);
