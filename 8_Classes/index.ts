@@ -94,3 +94,47 @@ class Cell {
 const iphone = new Cell("Iphone", "Pro 13");
 
 iphone.showCell();
+
+// getters: Faz a leitura do objeto chamado ou retornado
+
+class VideoGame {
+  public brand: string;
+  public model: string;
+
+  constructor(brand: string, model: string) {
+    this.brand = brand;
+    this.model = model;
+  }
+
+  get showVideoGame () {
+    return `A marca do video game é ${this.brand} e o modelo ${this.model}`;
+  }
+
+}
+
+const xbox = new VideoGame("Xbox", "Xbox 360");
+
+console.log(xbox, xbox.showVideoGame);
+
+// setters: Faz a modificação e atribuição de objetos
+
+class Moon {
+  public states!: Array<string>;
+
+  set alterState (states: Array<string>) {
+    this.states = states;
+  }
+
+  get readState() {
+    return this.states; 
+  }
+}
+
+const lua = new Moon();
+
+lua.alterState = ["Nova","Minguante","Crescente", "Cheia"];
+
+ console.log(lua.readState);
+
+  
+
