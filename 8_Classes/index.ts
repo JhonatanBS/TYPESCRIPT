@@ -73,3 +73,24 @@ const Joana = new Pessoa("Joana", 25, "F");
 const engineer = new Employee("Marta",30, "F", 4500.50, 8);
 
 console.log(Joana, engineer);
+
+/* Métodos: São funções dentro de uma classe, que são chamadas quando as classes são instanciadas */
+
+class Cell {
+  brand: string;
+  model: string;
+
+  constructor(brand: string, model: string) {
+    this.brand = brand;
+    this.model = model;
+  }
+
+  showCell() {
+    console.log(`A marca do celular é ${this.brand} e o modelo é ${this.model}`);
+  }
+}
+
+// Cell.showCell();
+const iphone = new Cell("Iphone", "Pro 13");
+
+iphone.showCell();
