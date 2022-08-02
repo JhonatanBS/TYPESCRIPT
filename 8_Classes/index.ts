@@ -136,5 +136,27 @@ lua.alterState = ["Nova","Minguante","Crescente", "Cheia"];
 
  console.log(lua.readState);
 
+// implements: Quando classes herdam interfaces ou types
+
+interface Birds {
+  fly(): string;
+  peck(): string;
+}
+
+class PicaPau implements Birds{
+  fly() {
+    return `O pica-pau voa`;
+  }
+
+  peck() {
+    return `O pica-pau bica`;
+  }
+}
+
+const picaPau = new PicaPau();
+
+console.log(picaPau.fly(), picaPau.peck());
+
+
   
 
