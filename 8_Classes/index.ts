@@ -157,6 +157,24 @@ const picaPau = new PicaPau();
 
 console.log(picaPau.fly(), picaPau.peck());
 
+// Override: é uma técnica que utilizamos para substituir um método
+
+class Id {
+  findById(): void{
+    console.log("O id é 1235656");
+  }
+}
+
+class NewId extends Id{
+  findById(): void {
+    console.log("O id mudou, agora é 98974545");
+  }
+}
+
+const id = new NewId();
+
+id.findById();
+
 
   
 
