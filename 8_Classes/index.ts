@@ -175,6 +175,66 @@ const id = new NewId();
 
 id.findById();
 
+/* Visibilidades: public, protected e private */
 
-  
+// public: Podem ser acessados em qualquer lugar da aplicação
 
+interface Bike{
+  color: string;
+  state: string;
+  brand: string;
+}
+class Bicycle {
+  public color: string;
+  public state: string;
+  public brand: string;
+
+  constructor({color, state, brand}: Bike) {
+    this.color = color;
+    this.state = state;
+    this.brand = brand;
+  }
+}
+
+const gts:Bike = new Bicycle({color:"Red",state:"New",brand:"GTS"});
+
+console.log(gts);
+
+// protected: Só podem ser acessados por métodos
+
+class Fish {
+  protected breed: string;
+
+  constructor(breed: string) {
+    this.breed = breed;
+  }
+
+  protected showBreed() {
+    return `A raça do peixe é ${this.breed}`;
+  }
+}
+
+class Beta extends Fish {
+  showBreedAll() {
+    console.log(this.showBreed());
+  }
+}
+
+const betaOne = new Beta("Beta");
+
+betaOne.showBreedAll();
+
+// private: Só podem ser acessados dentro da classe
+
+class CPF {
+  private dataCpf: string = "036.547.585-20";
+
+  showCpf(){
+    return this.dataCpf;
+  }
+}
+
+const findCpf = new CPF();
+
+// console.log(findCpf.dataCpf);
+console.log(findCpf.showCpf());
