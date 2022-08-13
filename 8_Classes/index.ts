@@ -254,3 +254,23 @@ Sum.x = 100;
 Sum.y = 120;
 
 console.log(Sum.sumNumbers());
+
+// classes genéricas
+
+class Street<T, U> {
+  name:T;
+  number:U;
+
+  constructor(name: T,number:U){
+    this.name = name;
+    this.number = number;
+  }
+
+  showStreet(){
+    return `A rua é ${this.name} de número ${this.number}`;
+  }
+}
+
+const nameStreet = new Street("25 de Março",25);
+
+console.log(nameStreet.showStreet())
