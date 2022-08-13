@@ -273,4 +273,19 @@ class Street<T, U> {
 
 const nameStreet = new Street("25 de Março",25);
 
-console.log(nameStreet.showStreet())
+console.log(nameStreet.showStreet());
+
+// params properties
+
+class Data {
+  // Não é necessário associar as variáveis
+  constructor(public name: string, private cpf: string, public age: number){}
+
+  get showCpf() {
+    return this.cpf;
+  }
+}
+
+const dataPersonal = new Data("Joana","056.547.251.02", 25);
+
+console.log(dataPersonal.showCpf);
