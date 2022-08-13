@@ -238,3 +238,19 @@ const findCpf = new CPF();
 
 // console.log(findCpf.dataCpf);
 console.log(findCpf.showCpf());
+
+// static: método que instancia a classe diretamente, em vez de instanciar através de um objeto
+
+class Sum {
+  static x: number; 
+  static y: number; 
+
+  static sumNumbers(): number {
+    return this.x + this.y;
+  }
+}
+
+Sum.x = 100;
+Sum.y = 120;
+
+console.log(Sum.sumNumbers());
