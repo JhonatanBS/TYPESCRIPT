@@ -289,3 +289,14 @@ class Data {
 const dataPersonal = new Data("Joana","056.547.251.02", 25);
 
 console.log(dataPersonal.showCpf);
+
+// expressiond class
+
+const Expression = class<T> {
+  constructor(public text: T) {
+  }
+}
+
+const showExpression = new Expression("Ola Mundo");
+
+console.log(showExpression);
