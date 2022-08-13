@@ -290,7 +290,7 @@ const dataPersonal = new Data("Joana","056.547.251.02", 25);
 
 console.log(dataPersonal.showCpf);
 
-// expressiond class
+// expressions class
 
 const Expression = class<T> {
   constructor(public text: T) {
@@ -300,3 +300,19 @@ const Expression = class<T> {
 const showExpression = new Expression("Ola Mundo");
 
 console.log(showExpression);
+
+// classe abstrata
+
+abstract class Dir {
+  abstract showDir(): string;
+}
+
+class MyDir extends Dir {
+  showDir(): string {
+    return `Esse é meu diretório: C:/Projetos`;  
+  }
+}
+
+const myDir = new MyDir();
+
+console.log(myDir.showDir());
