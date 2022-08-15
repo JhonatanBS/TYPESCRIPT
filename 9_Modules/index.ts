@@ -9,3 +9,9 @@ console.log(hello_world());
 import { dataPersonal } from "./dataPersonal";
 
 console.log(dataPersonal);
+
+// import de múltiplos dados
+
+import { mongodb, mysql, connection } from "./databases";
+
+console.log(mongodb,mysql,connection());
