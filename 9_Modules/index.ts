@@ -19,3 +19,9 @@ console.log(mongodb,mysql,connection());
 // as in import
 
 import { orm as sequelize } from "./orm";
+
+// * para importar todos os dados de um arquivo
+
+import * as names from "./academy";
+
+console.log(names.student, names.teacher);
