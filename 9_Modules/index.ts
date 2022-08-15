@@ -15,3 +15,7 @@ console.log(dataPersonal);
 import { mongodb, mysql, connection } from "./databases";
 
 console.log(mongodb,mysql,connection());
+
+// as in import
+
+import { orm as sequelize } from "./orm";
