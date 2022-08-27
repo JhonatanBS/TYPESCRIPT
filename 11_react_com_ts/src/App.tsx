@@ -1,4 +1,5 @@
 import { Books } from "./components/Books";
+import { State } from "./components/state";
 
 export function App() {
   /* Variáveis */
@@ -33,6 +34,7 @@ export function App() {
       {books.map( book => {
         return <Books key={book.title} title={book.title} page={book.page} price={book.price}/>
       })}
+      <State />
     </div>
   )
 }
