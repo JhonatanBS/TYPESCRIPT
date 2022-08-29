@@ -1,5 +1,5 @@
 import { Books } from "./components/Books";
-import { State } from "./components/state";
+import { State } from "./components/State";
 
 export function App() {
   /* Variáveis */
@@ -22,6 +22,19 @@ export function App() {
     {title: "Português", page: 250, price: 200.22},
   ]
 
+  /* ENUM */
+  enum Category {
+    JS = "Javascript",
+    TS = "Typescript",
+    Java = "Java",
+  }
+
+  /* Type with operator or |*/
+  type stringNull = string | null;
+
+  const book: stringNull = "Machado de Assis";
+  const data: stringNull = null;
+
   return (
     <div>
       <h1>React com Typescript</h1>
@@ -35,6 +48,11 @@ export function App() {
         return <Books key={book.title} title={book.title} page={book.page} price={book.price}/>
       })}
       <State />
+
+      <p>{Category.JS}</p>
+      <p>{Category.TS}</p>
+      <p>{Category.Java}</p>
+
     </div>
   )
 }
