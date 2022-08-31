@@ -4,7 +4,7 @@ console.log("Started Typescript in Express");
 
 /* Express */
 
-import express from "express";
+import express, { Request, Response } from "express";
 
 const app = express();
 
@@ -26,6 +26,10 @@ app.all("/DeleteorUpdate", (request, response) => {
   }else{
     return response.send("Acesso negado!");
   }
+});
+
+app.delete("/deleteUser", (request: Request, response: Response) => {
+  return response.status(200).json({message: "User delete success"});
 });
 
 app.listen(3333);
