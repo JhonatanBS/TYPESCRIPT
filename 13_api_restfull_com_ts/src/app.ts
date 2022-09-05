@@ -6,6 +6,11 @@ const app = express();
 /* JSON Middleware */
 app.use(express.json());
 
+/* Routes */
+import router from "./router";
+
+app.use("/api/", router);
+
 /* app port*/
 const port = config.get<number>("port");
 
