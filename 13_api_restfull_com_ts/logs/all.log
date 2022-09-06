@@ -1,0 +1,5 @@
+2022-09-06 09:03:24:324 - [32minfo[39m: [32mAplicação rodando na porta: 3000[39m
+2022-09-06 09:05:16:516 - [31merror[39m: [31mNão foi possível conectar![39m
+2022-09-06 09:05:16:516 - [31merror[39m: [31mErro: MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/[39m
+2022-09-06 09:05:16:516 - [32minfo[39m: [32mAplicação rodando na porta: 3000[39m
+2022-09-06 09:07:11:711 - [31merror[39m: [31mNão foi possível conectar![39m
